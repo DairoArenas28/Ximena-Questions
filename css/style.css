@@ -1,0 +1,30 @@
+body {
+    background-color: papayawhip;
+}
+
+.custom-modal {
+    max-width: 90%; /* Ajusta el tamaño máximo del modal */
+    margin: 0 auto; /* Centra el modal */
+}
+
+@media (max-width: 600px) { /* Estilo para pantallas pequeñas */
+    .custom-modal {
+        width: 95%; /* Asegúrate de que el modal no ocupe todo el ancho */
+        padding: 10px; /* Agrega un poco de padding si es necesario */
+    }
+}
+
+.video-container {
+    width: 100%; /* Ancho completo del contenedor */
+    position: relative; /* Posicionamiento relativo para el video */
+    padding-top: 56.25%; /* Relación de aspecto 16:9 (altura en porcentaje) */
+}
+
+.video-container video {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho completo del video */
+    height: 100%; /* Altura completa del video */
+    border-radius: 8px; /* Esquinas redondeadas (opcional) */
+}
