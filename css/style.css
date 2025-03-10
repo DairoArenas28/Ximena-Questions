@@ -10,7 +10,7 @@ body {
 @media (max-width: 600px) { /* Estilo para pantallas pequeñas */
     .custom-modal {
         width: 95%; /* Asegúrate de que el modal no ocupe todo el ancho */
-        padding: 10px; /* Agrega un poco de padding si es necesario */
+        padding: 5px; /* Agrega un poco de padding si es necesario */
     }
 }
 
@@ -20,11 +20,26 @@ body {
     padding-top: 56.25%; /* Relación de aspecto 16:9 (altura en porcentaje) */
 }
 
+
 .video-container video {
-    position: absolute; /* Posicionamiento absoluto */
-    top: 0;
-    left: 0;
-    width: 100%; /* Ancho completo del video */
-    height: 100%; /* Altura completa del video */
+    position: absolute; /* Posicionamiento absoluto respecto al contenedor */
+    top: 50%; /* Coloca el video en el centro vertical */
+    left: 50%; /* Coloca el video en el centro horizontal */
+    width: 80%; /* Ancho del video */
+    height: 80%; /* Altura del video */
+    transform: translate(-50%, -50%); /* Ajusta el video para que esté centrado completamente */
     border-radius: 8px; /* Esquinas redondeadas (opcional) */
+}
+
+
+.fullscreen-video {
+    width: 100% !important; /* Expande a todo el ancho */
+    height: 100% !important; /* Expande a toda la altura */
+    border-radius: 0px; /* Elimina bordes redondeados cuando se expande */
+}
+
+.custom-modal {
+    /* Estilos personalizados para el popup */
+    border-radius: 16px;
+    padding: 20px;
 }
