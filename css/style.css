@@ -3,14 +3,14 @@ body {
 }
 
 .custom-modal {
-    max-width: 90%; /* Ajusta el tamaño máximo del modal */
+    max-width: 95%; /* Ajusta el tamaño máximo del modal */
     margin: 0 auto; /* Centra el modal */
 }
 
 @media (max-width: 600px) { /* Estilo para pantallas pequeñas */
     .custom-modal {
         width: 95%; /* Asegúrate de que el modal no ocupe todo el ancho */
-        padding: 5px; /* Agrega un poco de padding si es necesario */
+        padding: 1px; /* Agrega un poco de padding si es necesario */
     }
 }
 
@@ -25,10 +25,36 @@ body {
     position: absolute; /* Posicionamiento absoluto respecto al contenedor */
     top: 50%; /* Coloca el video en el centro vertical */
     left: 50%; /* Coloca el video en el centro horizontal */
-    width: 80%; /* Ancho del video */
-    height: 80%; /* Altura del video */
+    width: 100%; /* Ancho del video */
+    height: 100%; /* Altura del video */
     transform: translate(-50%, -50%); /* Ajusta el video para que esté centrado completamente */
     border-radius: 8px; /* Esquinas redondeadas (opcional) */
+}
+
+@media (max-width: 600px) {
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .video-container video {
+        width: 80%; /* Ajusta el ancho en porcentaje para mejor adaptación */
+        height: 300px; /* Aumenta la altura del video */
+        max-height: 90vh; /* No debe sobrepasar el alto de la pantalla */
+        border-radius: 8px;
+    }
+
+    p {
+        position: relative;
+        text-align: center;
+        font-size: 14px;
+        color: #555;
+        margin-top: 10px;
+    }
 }
 
 

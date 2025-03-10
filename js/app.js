@@ -15,7 +15,9 @@
                 <div class="video-container">
                     <video id="myVideo" src="./resource/video/cine.mp4" controls autoplay></video>
                 </div>
-                <p>¡DIOS LE BENDIGA GRANDEMENTE!</p>
+                <footer style="margin-top: 120px; font-size: 14px; color: #777;">
+                    <p>¡DIOS LE BENDIGA GRANDEMENTE!</p>
+                </footer>
             `,
             showCloseButton: true,
             showCancelButton: true,
